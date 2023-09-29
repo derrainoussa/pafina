@@ -1,0 +1,581 @@
+/*-------- Medias queries -----------*/
+
+/******** Pour GRANDS ECRANS **********/
+
+@media screen and (min-width:1024px) {
+    body
+    {
+        background-color: whitesmoke;
+    }
+
+    header
+    {
+    display: flex;
+    border-radius: 5px;
+    font-size: medium;
+    color: goldenrod;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: #7D4FFE;
+    padding: 12px 0px 5px 0px;
+    margin: -1% -0.5% 0% -0.6%;
+    }
+
+    nav a
+    {
+        color: white;
+        margin: 0px 15px 0px 15px;
+        font-size: large;
+    }
+    
+    .box_memb, .identifier, .inscrire, .box_projet, .box_services, .box_wallet, .box_propos, .box_details, footer, .choix_paie form{background-color: white;}
+
+    .secondaire2{display: none;}
+
+    div img
+    {
+        margin: 5% 0% 0% 5%;
+    }
+
+    
+    button, .button{background-color: #7D4FFE;color: white;min-width: 150px;min-height: 35px;border-radius: 5px;padding: 2px auto;border: none;font-weight: bold;}
+    button:hover, .button:hover{background-color: darkorange;color: gray;cursor: pointer;}
+
+    .nom
+    {
+    font-weight: bold;
+    font-size: x-large;
+    margin: 0% 30% 0% 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .identifier
+    {
+        margin: 10% 30% 0% 30%;
+        text-align: center;
+        font-size: large;
+        background-color: white;
+        border: 1px #7D4FFE solid;
+        padding-top: 0.25%;
+    }
+    .identifier h2, .inscrire h2, .lien_butt{color: green;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+    .inscrire
+    {
+        margin: 3% 30% 0% 30%;
+        text-align: center;
+        font-size: large;
+        background-color: white;
+        border-radius: 20px 0px 20px 0px;
+        padding-top: 0.25%;
+    }
+
+     .slo{font-size: 15px; color: darkblue;}
+    .mob_link{display: flex;justify-content: space-between;}
+    .mob_link div{margin: 0% 2% 0% 2%;}
+    .infos{display: none;}
+    .lien_butt{color: white;font-weight: bolder;}
+    .icons{width: 50px;}
+
+    .first{height: 150px;background-color: #7D4FFE;margin: -0.5% -0.6% 0% -0.6%;}
+    .second{height: 125px;background-color: #fff;border-radius: 5px 5px 0px 0px;margin-top: -125px;}
+    .ts, .se{margin: 0px 0px 0px 20px;}
+    .ts{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .se{font-size: 25px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: indigo;}
+    .third{height: 120px;background-color: #fff;border-top: 3px whitesmoke solid;}
+    .trans_ch{padding: 20px 80px 0px 80px;justify-content: space-between;display: flex;}
+    .alignement{text-align: center;}
+    .trans_cont{width: 40px;height: 40px;border-radius: 5px;}
+    .brouge{background-color: red;}
+    .bmarron{background-color: #7D4FFE;}
+    .bvert{background-color: green;}
+    .borange{background-color: orange;}
+    .photobox{background-color: whitesmoke;margin: 0px 0px 0px 10px;width: 40px;height: 40px;}
+    .write{margin-top: 10px;font-size: 10px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: gray;}
+    .econo{display: flex;padding: 20px 10px 0px 10px;justify-content: space-between;}
+    .econo_box{width: 49.25%;height: 60px;background-color: #fff;}
+    .box_choix{display: flex; justify-content: space-around; padding: 4% 3% 0% 2%;}
+    .kind{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: gray;margin: 5px 0px 0px 20px;}
+    .evaluation{font-size: 20px;margin: 5px 0px 0px 20px;font-weight: bold;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .vert{color: green;}
+    .rouge{color: red;}
+    .gris{color: gray;}
+    .orange{color: orange;}
+    .gt{display: flex;}
+    .gv{margin-left: 900px;font-size: 16px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .titre_trans{font-size: 22px;color: gray;margin: 5px 0px 5px 10px;display: flex;justify-content: space-between;}
+    .ph{color: #7D4FFE;font-size: 18px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    .trans_sum{margin: 0px 10px 15px 10px;height: 50px;background-color: #fff;padding-top: 10px;display: flex;}
+    .compte{display: flex;margin-bottom: 20px;overflow-x: auto;}
+    .compte_box{background-color: #fff;width: 90px;height: 100px;margin-right: 10px;}
+    .transal{margin-left: 20px;}
+    .notran{font-size: 18px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: gray;}
+    .tytran{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: grey;}
+    .n{width: 70px;height: 70px;background-color: whitesmoke;margin: 5px 10px 0px 10px;}
+    .i{text-align: center;color: grey;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .box_fact{display: flex;justify-content: space-between;margin-top: 10px;overflow-x: auto;}
+    .fact{width: 400px;height: 300px;background-color: #fff;text-align: center;margin-left: 20px;justify-content: center;}
+    .ims{width: 80px;height: 80px;background-color: whitesmoke;margin: 20px auto;}
+    .noms{color: grey;font-size: 20px;margin-bottom: 20px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .sers{color: gray;margin-bottom: 30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .bpf{background-color: #7D4FFE;width: 200px;}
+    .oe{height: 90px;background-color: #fff;padding: 10px 10px 0px 10px;margin-bottom: 10px;}
+    .ov{justify-content: space-between;display: flex;}
+    .o{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: darkorange;font-size: 18px;}
+    .v{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 18px;color: green;}
+    .od{color: gray;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .r{width: 1150px;}
+
+    .box_projet{min-height: 350px; padding: 2% 10% 2% 10%;}
+    .box_projet, .box_choix{width: 800px;background-color: white;margin: 5% 0% 0% 10%;border-radius: 6px 6px 6px 6px;}
+    .box_projet ul button{margin-left: 10px;}
+    .box_projet h2{color: darkorange;font-weight: bolder;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+    div div img
+    {
+        width: 80%;
+    }
+
+    div div ul a
+    {
+        text-decoration: none;
+        margin: 0% 15px 0% 0%;
+        color: green;
+        marks: none;
+    }
+
+    div div ul
+    {
+        background-color: whitesmoke;
+        padding: 5px 0px 5px 0px;
+    }
+
+    div div ul button
+    {
+        margin: 0px 0px 0px 25px;
+    }
+
+    div div details
+    {
+        margin: 0% 5% 0% 10%;
+    }
+
+    div div details summary
+    {
+        margin-bottom: 2%;
+        color: darkblue;
+    }
+
+    p a button
+    {
+        background-color: darkgreen;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: none;
+        color: white;
+        padding: 1% 1% 1% 1%;
+        margin-top: 2%;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    ul
+    {
+        display: flex;
+    }
+
+    .principal
+    {
+        display: flex;
+        margin: 0% 3% 0% 3%;
+        padding: 3% 0% 0% 0%;
+    }
+
+    .primo
+    {
+        display: flex;
+        margin: 0% 10% 0% 10%;
+        height: 350px;
+    }
+
+    .box_services
+    {
+        margin: 3% 5% 3% 5%;
+        width: 40%;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .primo .box_services h3
+    {
+        color: darkgreen;
+        font-size: 25px;
+    }
+
+    .box_services ol
+    {
+        margin-top: 10%;
+    }
+
+    .box_services ol li
+    {
+        text-align: start;
+        margin-left: 20%;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .wallet{margin-top: 5%;display: flex;}
+
+    .box_wallet
+    {
+        width: 30%;
+        height: 400px;
+        margin: 0% 3% 0% 3%;
+        font-size: 20px;
+    }
+
+    .box_wallet h3, .choix_aff
+    {
+        text-align: center;
+        color: darkgreen;
+        font-size: 22.5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .box_wallet .box_memb{font-size: 12px;}
+    .box_wallet .box_memb .tab_element{color: green;}
+
+    .propos
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 5% 6% 0% 6%;
+    }
+
+    .box_propos
+    {
+        width: 500px;
+        text-align: center;
+        height: 350px;
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    .box_propos h3
+    {
+        color: darkgreen;
+        margin-bottom: 10%;
+        font-size: 30px;
+    }
+
+    .box_propos p
+    {
+        text-align: start;
+        margin-left: 5%;
+        color: black;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .box_details
+    {
+        margin: 2.5% 15% 0% 15%;
+        padding: 3% 3% 5% 3%;
+    }
+    .box_details p{font-weight: bold;font-size: 16px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+    .sous_details
+    {
+        color: darkgreen;font-weight: bolder;font-size: 20px;
+    }
+
+    .box_memb{width: 70%;;font-family: Arial, Helvetica, sans-serif;margin: 5% 15% 0% 15%;min-height: 300px;padding: 0% 0% 0% 0%;}
+    .memb_element{text-align: center;margin: -40px;}
+
+    .mob_link{margin-top: 10%;}
+
+    .choix_paie form{width: 60%;min-height: 300px; margin: 5% 20% 0% 20%;text-align: center;padding: 8% 0% 0% 0%;font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    .inf_paie form{width: 60%;min-height: 300px;margin: 5% 20% 0% 20%;text-align: center;padding: 2%;font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arrial Narrow', Arial, sans-serif;}
+    .val_butt{width: 60px;background-color: darkgreen;border-radius: 3px;width: 15%;height: 24px;border: none;font-size: medium;font-weight: bold;color: white;}
+    .val_butt:hover{color: black;background-color: darkorange;}
+    
+    .trans_box, .depot, .portf, .wal_to_wal, .inf_paie form{background-color: white;}
+
+    .trans_flex{display: flex;margin: 5% 0% 0% 0%;justify-content: space-between;}
+    .trans_box{margin: 5% 10% 0% 10%;padding: 1% 5% 5% 5%;text-align: center;}
+
+    .depot, .portf{margin: 10% 10% 5% 10%;text-align: center;padding: 3% 5% 5% 5%;font-weight: bolder;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: darkorange;}
+    .wal_to_wal{margin: 5% 10% 0% 10%;padding: 5% 5% 5% 5%;text-align: center;font-weight: bolder;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: darkorange;}
+    .button{margin-top: 2%;}
+
+    .choix_trans{color: darkorange;font-weight: bolder;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+    .modif{background-color: #fff;margin: 2% 20% 10% 20%;padding: 2% 2% 2% 15%;}
+
+    a
+    {
+        text-decoration: none;
+    }
+
+    .bar
+    {
+        border-bottom: 1px solid black;
+    }
+
+    .insc-btn, .fin-btn{background-color: #7D4FFE;border-radius: 3px;width: 30%;height: 30px;border: none;font-size: medium;font-weight: bold;}
+    .auth-btn{width: 150px;height: 35px; border-radius: 5px; color: #fff;font-weight: bold;font-size: 15px;cursor: pointer; background-color: #7D4FFE;border: none;}
+    .auth-btn:hover, .insc-btn:hover{color: white;background-color: darkorange;}
+    .style_nat{width: 150px;}
+
+    
+    .hamburger{display: none;cursor: pointer;}
+    .bar{display: block;width: 25px;height: 3px;margin: 5px auto;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;background-color: white;}
+
+
+    footer
+    {
+        height: 80px;
+        margin: 80px -5px 0px -5px;
+        text-align: center;
+        padding: 2% 0% 2% 0%;
+    }
+    .com{padding: 1% 0% 1% 0%;color: darkgreen;text-align: center;font-size: 10px;font-weight: bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    .copyright-text{color: darkorange;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+    .icon_add{width: 20%;}
+    .icon_on{width: 10%;}
+
+    .error{color: red;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .success{color: green;}
+    .text-center{text-align: center;}
+}
+
+/******** Pour format SMARTPHONE ******/
+
+@media screen and (max-width:767px) {
+    body {background-color: whitesmoke;}
+    header {position: fixed; background-color: #7D4FFE; width: 100%;height: 18px; font-size: medium; color: goldenrod; padding: 4% 0% 4% 0%; margin: -10px -10px 0px -8px;}
+    button, .button{background-color: #7D4FFE;color: white;min-width: 80px;min-height: 35px;border-radius: 5px;padding: 2px auto;font-weight: bolder;border: none;cursor: pointer;}
+    button:hover, .button:hover{background-color: darkorange;color: gray;}
+    details p {text-align: center;}
+    a{text-decoration: none;}
+    .icons{width: 25px;}
+
+    .first{height: 150px;background-color: #7D4FFE;margin: 0px -10px 0px -10px;}
+    .second{height: 125px;background-color: #fff;border-radius: 5px 5px 0px 0px;margin-top: -125px;}
+    .ts, .se{margin: 0px 0px 0px 20px;}
+    .ts{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .se{font-size: 25px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: indigo;}
+    .third{height: 120px;background-color: #fff;border-top: 3px whitesmoke solid;}
+    .trans_ch{padding: 25px 30px 0px 30px;justify-content: space-between;display: flex;text-align: center;}
+    .alignement{text-align: center;}
+    .illus{width: 35px;}
+    .trans_cont{width: 40px;height: 40px;border-radius: 5px;padding-top: 2px;}
+    .brouge{background-color: red;}
+    .bmarron{background-color: #7D4FFE;}
+    .bvert{background-color: green;}
+    .borange{background-color: orange;}
+    .photobox{background-color: whitesmoke;margin: 10px 0px 0px 10px;width: 40px;height: 40px;}
+    .write{margin-top: 10px;font-size: 10px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: gray;font-weight: bold;}
+    .econo{display: flex;padding: 20px 10px 0px 10px;justify-content: space-between;}
+    .econo_box{width: 47%;height: 85px;background-color: #fff;padding-top: 5px;}
+    .box_choix{display: flex; justify-content: space-around; padding: 4% 3% 0% 2%;}
+    .kind{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: gray;margin: 5px 0px 0px 20px;}
+    .evaluation{font-size: 20px;font-weight: bold;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 5px 0px 0px 20px;}
+    .vert{color: green;}
+    .rouge{color: red;}
+    .gris{color: gray;}
+    .orange{color: orange;}
+    .gt{display: flex;}
+    .gv{margin-left: 20%;font-size: 16px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .titre_trans{font-size: 22px;color: gray;margin: 5px 0px 5px 10px;display: flex;justify-content: space-between;}
+    .ph{color: #7D4FFE;font-size: 18px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    .trans_sum{margin: 0px 10px 15px 10px;height: 80px;background-color: #fff;padding-top: 10px;display: flex;}
+    .compte{display: flex;margin-bottom: 20px;overflow-x: auto;}
+    .compte_box{background-color: #fff;width: 90px;height: 100px;margin-right: 10px;}
+    .transal{margin-left: 20px;}
+    .notran{font-size: 15px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: #7D4FFE;margin-bottom: 5px;}
+    .tytran{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: grey;font-size: 12px;}
+    .n{width: 70px;height: 70px;background-color: whitesmoke;margin: 5px 10px 0px 10px;}
+    .i{text-align: center;color: grey;}
+    .box_fact{display: flex;justify-content: space-between;margin-top: 10px;overflow-x: auto;}
+    .fact{width: 250px;height: 220px;background-color: #fff;text-align: center;margin-left: 20px;}
+    .ims{width: 50px;height: 50px;background-color: whitesmoke;margin: 20px auto;}
+    .noms{color: grey;font-size: 12px;margin-bottom: 20px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .sers{color: gray;margin-bottom: 30px;}
+    .bpf{background-color: #7D4FFE;width: 80px;}
+    .oe{height: 90px;background-color: #fff;padding: 10px 10px 0px 10px;margin-bottom: 10px;}
+    .ov{justify-content: space-between;display: flex;}
+    .o{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: darkorange;font-size: 18px;}
+    .v{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 18px;color: green;}
+    .od{color: gray;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .r{width: 95%;}
+
+    .identifier{margin: 30% 10% 0% 10%;text-align: center;padding: 5% 3% 3% 3%;}
+    .inscrire{margin: 5% 5% 5% 5%;text-align: center;background-color: white;padding: 0.5% 2% 2% 2%;}
+    .inscrire a, .identifier a{text-decoration: none;}
+    select{width: 150px;}
+    .identifier h2, .inscrire h2{color: green;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    .f_link{margin-left: 6%;}
+    .auth-btn, .insc-btn, .fin-btn{background-color: darkorange;border-radius: 3px;border: none;font-size: medium;font-weight: bold;}
+    .auth-btn:hover, .insc-btn:hover, .fin-btn:hover{color: white;}
+
+    .box_services, .box_wallet, .box_propos, .identifier, .box_details, .box_memb, .depot, .portf, .trans_box, .wal_to_wal, .inf_paie{background-color: white;font-weight: bolder;}
+    .box_services h3, .box_wallet h3, .box_propos h3{font-size: 15px;font-weight: bolder;color: green;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;}
+
+    .nom {font-size: 1.25rem; font-weight: bold;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 5%;}
+    .principal {padding: 0% 0% 0% 0%;}
+    .secondaire1{display: none;}
+    .secondaire2 img {width: 70%; margin: 0% 15% 0% 15%;}
+    .box_choix{padding: 15% 5% 5% 5%; background-color: white;margin-top: 5%;text-align: center;}
+    .mot_de_bienvenu{font-size: 18px; font-weight: bolder;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: chocolate;}
+    .slo{font-size: 16px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bolder; color: green;}
+    .mob_link{display: flex;justify-content: space-between;margin-top: 10%;}
+    .infos{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: bolder;}
+
+    .Box_projet{padding: 60px 0px 0px 0px;}
+    .box_projet {width: 90%; background-color: white; padding: 5% 2% 12% 2%; margin: 0% 5% 0% 3%;min-height: 300px;}
+    .box_projet ul {display: none;}
+    .box_projet h2 {color: darkorange; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;}
+    .box_projet details summary {margin-left: 30%;}
+
+    .box_services{padding: 2% 2% 2% 2%;}
+    .box_services ol li{margin-left: 10%;}
+
+    .box_wallet{padding: 5% 2% 5% 2%;margin-top: 10%;min-height: 60%;}
+
+    .box_propos{min-height: 150px;padding: 5% 0% 5% 0%;}
+    .box_propos p{margin-left: 5%;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+    .box_details{padding: 2% 2% 7% 7%;margin: 2% 5% 5% 5%;}
+    .box_details p{font-size: 16px;font-weight: 800;}
+    .box_details p .sous_details{font-size: 18px;color: green;font-weight: bolder;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+    .box_memb{padding: 8% 2% 4% 2%;width: 96%;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;height: 400px;}
+    .memb_element{font-size: 10px;padding-top: 40px;}
+    .tab_element{font-size: 16px;color: darkolivegreen;}
+
+    .choix_paie form, .trans_box{width: 60%;min-height: 300px; margin: 5% 20% 0% 20%;text-align: center;padding: 8% 0% 0% 0%;font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    .choix_paie{background-color: white;}
+    .val_butt{width: 60px;background-color: darkgreen;border-radius: 3px;height: 24px;border: none;font-size: medium;font-weight: bold;color: white;margin-top: 10px;padding: 2px 2px 2px 2px;}
+    .val_butt:hover{color: black;background-color: darkorange;}
+    .choix_aff, .choix_trans{color: darkorange;}
+
+    .trans_butt{margin-top: 10%;}
+    .trans_box{padding: 10% 0% 10% 5%;margin-top: 10%;}
+    .inf_paie{padding: 5% 2% 5% 2%;margin-top: 10%;text-align: center;}
+
+    .depot, .portf, .wal_to_wal{margin: 20% 10% 5% 10%;text-align: center;padding: 30% 5% 45% 5%;font-weight: bolder;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: darkorange;font-size: 15px;}
+    .button{margin-top: 2%;}
+
+    .hamburger{display: block;margin: -25px 0% 0% 70%;padding-bottom: 5px;cursor: pointer;}
+    .hamburger.active .bar:nth-child(2){opacity: 0;}
+    .hamburger.active .bar:nth-child(1){transform: translateY(8px) rotate(45deg);}
+    .hamburger.active .bar:nth-child(3){transform: translateY(-8px) rotate(-45deg);}
+    .nav-menu{position: fixed;left: -100%;top: 45px;gap: 2%;flex-direction: column;background-color: whitesmoke;width: 100%;text-align: center;transition: 0.3s;display: flex;align-items: center;}
+    .nav-item{margin: 16px 0;transition: 0.7s ease;text-decoration: none;color: darkgreen;font-weight: bolder;font-family: Georgia, 'Times New Roman', Times, serif;}
+    .nav-item:hover{color: darkorange;}
+    .nav-menu.active{left: 0;}
+    .bar{display: block;width: 25px;height: 3px;margin: 5px auto;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;background-color: white;}
+
+    footer {background-color: white; min-height: 80px; margin: 10% 0% 0% 0%;padding: 1% 0% 0% 0%;}
+    .copyright-text{font-size: 80%;text-align: center;color: darkorange;}
+    .com{padding: 2% 0% 2% 0%;color: darkgreen;text-align: center;font-size: 12px;font-weight: bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+    .icon_add{width: 45%;}
+    .icon_on{width: 10%;}
+
+    .error{color: red;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .success{color: green;}
+    .text-center{text-align: center;}
+}
+
+/******* Pour format TABLETTTE *******/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {background-color: whitesmoke;}
+    header {position: fixed; background-color: #7D4FFE; width: 100%;height: 2%; font-size: medium; color: goldenrod; padding: 4% 0% 4% 0%; margin: -3% 0% 0% -3%;}
+    button, .button{background-color: #7D4FFE;color: white;width: 160px;height: 35px;border-radius: 5px;padding: 2px auto;font-weight: bolder;border: none;}
+    button:hover, .button:hover{background-color: darkorange;color: gray;}
+    details p {text-align: center;}
+    a{text-decoration: none;}
+    .icons{width: 30px;}
+
+    .identifier{margin: 30% 10% 0% 10%;text-align: center;padding: 5% 3% 3% 3%;}
+    .inscrire{margin: 5% 5% 5% 5%;text-align: center;background-color: white;padding: 0.5% 2% 2% 2%;}
+    .inscrire a, .identifier a{text-decoration: none;}
+    select{width: 150px;}
+    .identifier h2, .inscrire h2{color: green;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    .f_link{margin-left: 6%;}
+    .auth-btn, .insc-btn, .fin-btn{background-color: darkorange;border-radius: 3px;border: none;font-size: medium;font-weight: bold;}
+    .auth-btn:hover, .insc-btn:hover, .fin-btn:hover{color: white;}
+
+    .box_services, .box_wallet, .box_propos, .identifier, .box_details, .box_memb, .depot, .portf, .trans_box, .wal_to_wal{background-color: white;font-weight: bolder;}
+    .box_services h3, .box_wallet h3, .box_propos h3{font-size: 15px;font-weight: bolder;color: green;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;}
+
+    .nom {font-size: 1.25rem; font-weight: bold;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 5%;}
+    .principal {padding: 0% 0% 0% 0%;}
+    .secondaire1{display: none;}
+    .secondaire2 img {width: 50%; margin: 0% 15% 0% 15%;}
+    .box_choix{padding: 15% 5% 5% 5%; background-color: white;margin-top: 5%;text-align: center;}
+    .mot_de_bienvenu{font-size: 18px; font-weight: bolder;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: chocolate;}
+    .slo{font-size: 16px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bolder; color: green;}
+    .mob_link{display: flex;justify-content: space-between;margin-top: 10%;}
+    .infos{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: bolder;}
+
+    .Box_projet{padding: 60px 0px 0px 0px;}
+    .box_projet {width: 90%; background-color: white; padding: 5% 2% 12% 2%; margin: 0% 5% 0% 3%;min-height: 300px;}
+    .box_projet ul {display: none;}
+    .box_projet h2 {color: darkorange; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;}
+    .box_projet details summary {margin-left: 30%;}
+
+    .box_services{padding: 2% 2% 2% 2%;}
+    .box_services ol li{margin-left: 10%;}
+
+    .box_wallet{padding: 5% 2% 5% 2%;margin-top: 2%;min-height: 60%;}
+
+    .box_propos{min-height: 150px;padding: 5% 0% 5% 0%;}
+    .box_propos p{margin-left: 5%;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+    .box_details{padding: 2% 2% 7% 7%;margin: 2% 5% 5% 5%;}
+    .box_details p{font-size: 16px;font-weight: 800;}
+    .box_details p .sous_details{font-size: 18px;color: green;font-weight: bolder;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+    .box_memb{padding: 8% 2% 4% 2%;width: 96%;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;height: 400px;}
+    .memb_element{font-size: 10px;padding-top: 40px;}
+    .tab_element{font-size: 16px;color: darkolivegreen;}
+
+    .choix_paie form, .trans_box{width: 60%;min-height: 300px; margin: 5% 20% 0% 20%;text-align: center;padding: 8% 0% 0% 0%;font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    .choix_paie{background-color: white;}
+    .val_butt{width: 60px;background-color: darkgreen;border-radius: 3px;height: 24px;border: none;font-size: medium;font-weight: bold;color: white;margin-top: 10px;padding: 2px 2px 2px 2px;}
+    .val_butt:hover{color: black;background-color: darkorange;}
+    .choix_aff, .choix_trans{color: darkorange;}
+
+    .trans_butt{margin-top: 10%;}
+    .trans_box{padding: 10% 0% 10% 0%;margin-top: 10%;}
+    .inf_paie{padding: 5% 2% 5% 2%;margin-top: 10%;text-align: center;}
+
+    .depot, .portf, .wal_to_wal{margin: 20% 10% 5% 10%;text-align: center;padding: 30% 5% 45% 5%;font-weight: bolder;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: darkorange;font-size: 15px;}
+    .button{margin-top: 2%;}
+
+    .hamburger{display: block;margin: -25px 0% 0% 70%;padding-bottom: 5px;cursor: pointer;}
+    .hamburger.active .bar:nth-child(2){opacity: 0;}
+    .hamburger.active .bar:nth-child(1){transform: translateY(8px) rotate(45deg);}
+    .hamburger.active .bar:nth-child(3){transform: translateY(-8px) rotate(-45deg);}
+    .nav-menu{position: fixed;left: -100%;top: 45px;gap: 2%;flex-direction: column;background-color: whitesmoke;width: 100%;text-align: center;transition: 0.3s;display: flex;align-items: center;}
+    .nav-item{margin: 16px 0;transition: 0.7s ease;text-decoration: none;color: darkgreen;font-weight: bolder;font-family: Georgia, 'Times New Roman', Times, serif;}
+    .nav-item:hover{color: darkorange;}
+    .nav-menu.active{left: 0;}
+    .bar{display: block;width: 25px;height: 3px;margin: 5px auto;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;background-color: white;}
+
+    footer {background-color: white; min-height: 80px; margin: 10% 0% 0% 0%;padding: 1% 0% 0% 0%;}
+    .copyright-text{font-size: 80%;text-align: center;color: darkorange;}
+    .com{padding: 2% 0% 2% 0%;color: darkgreen;text-align: center;font-size: 12px;font-weight: bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+    .icon_add{width: 30%;}
+    .icon_on{width: 10%;}
+
+    .error{color: red;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .success{color: green;}
+    .text-center{text-align: center;}
+}
