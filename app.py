@@ -10,7 +10,7 @@ import uuid
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configuration
 UPLOAD_FOLDER = os.path.join(os.path.expanduser('~'), 'downloads')
