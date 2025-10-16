@@ -133,4 +133,5 @@ def health():
     })
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get("PORT", 5000))  # Railway attribue le port automatiquement
+    app.run(host='0.0.0.0', port=port)
