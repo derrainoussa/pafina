@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Téléchargeur YouTube MP3</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafb;
+      color: #111;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 10px;
+      display: block;
+    }
+
+    textarea, input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      background: #fdfdfd;
+    }
+
+    button {
+      background-color: #4f46e5;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+      width: 100%;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+
+    .progress-bar {
+      width: 100%;
+      background-color: #e5e7eb;
+      border-radius: 6px;
+      margin: 20px 0;
+      height: 10px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      background-color: #4f46e5;
+      transition: width 0.4s ease-in-out;
+    }
+
+    .status {
+      text-align: center;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+
+    .success {
+      color: #10b981;
+    }
+
+    .error {
+      color: #ef4444;
+    }
+
+    pre {
+      background: #f3f4f6;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🎵 Téléchargeur MP3 YouTube</h2>
+    <form id="downloadForm">
+      <label for="urls">Liste des URLs YouTube (une par ligne) :</label>
+      <textarea id="urls" name="urls" rows="5" placeholder="https://www.youtube.com/watch?v=..."></textarea>
+
+      <label for="quality">Qualité audio :</label>
+      <input type="text" id="quality" name="quality" value="192" placeholder="192 (par défaut)">
+
+      <button type="submit">📥 Télécharger</button>
+    </form>
+
+    <div class="progress-bar hidden" id="progressBar">
+      <div class="progress" id="progressFill"></div>
+    </div>
+
+    <div class="status" id="statusText"></div>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('downloadForm');
+    const progressBar = document.getElementById('progressBar');
+    const progressFill = document.getElementById('progressFill');
+    const statusText = document.getElementById('statusText');
+    const resultDiv = document.getElementById('result');
+
+    function resetProgress() {
+      progressFill.style.width = '0%';
+      progressBar.classList.remove('hidden');
+    }
+
+    function updateProgress(percent) {
+      progressFill.style.width = percent + '%';
+    }
+
+    function showStatus(message, type = '') {
+      statusText.innerHTML = message;
+      statusText.className = `status ${type}`;
+    }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const urls = document.getElementById('urls').value.trim().split('\n').filter(u => u);
+      const quality = document.getElementById('quality').value || '192';
+
+      if (!urls.length) {
+        showStatus("Veuillez entrer au moins une URL.", 'error');
+        return;
+      }
+
+      resetProgress();
+      updateProgress(10);
+      showStatus("⏳ Téléchargement en cours...");
+
+      try {
+        const response = await fetch('/api/download', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ urls, quality, parallel: true })
+        });
+
+        updateProgress(70);
+
+        const data = await response.json();
+        updateProgress(100);
+
+        if (data.success) {
+          showStatus("✅ Téléchargement terminé !", 'success');
+
+          const resultHTML = `
+            <pre>
+Session ID : ${data.session_id}
+Téléchargements réussis : ${data.stats.success} / ${data.stats.total}
+Échecs : ${data.stats.failed}
+            </pre>
+          `;
+
+          resultDiv.innerHTML = resultHTML;
+        } else {
+          showStatus(`❌ ${data.message}`, 'error');
+        }
+      } catch (err) {
+        showStatus("❌ Erreur côté client : " + err.message, 'error');
+      }
+
+      setTimeout(() => {
+        progressBar.classList.add('hidden');
+        updateProgress(0);
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

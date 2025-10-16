@@ -10,7 +10,7 @@ import uuid
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000", "https://lerimmo.com"])
+CORS(app)
 
 # Configuration
 UPLOAD_FOLDER = os.path.join(os.path.expanduser('~'), 'downloads')
@@ -56,8 +56,8 @@ def telecharger_audio(youtube_url, dossier_de_sortie, qualite='192'):
         }
 
 @app.route('/')
-def Home():
-    return "🚀 API Flask déployée sur Railway avec succès !"
+def home():
+    return render_template('index.html')
 
 @app.route('/api/download', methods=['POST'])
 def download():
