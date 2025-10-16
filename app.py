@@ -56,8 +56,8 @@ def telecharger_audio(youtube_url, dossier_de_sortie, qualite='192'):
         }
 
 @app.route('/')
-def index():
-    return ('Youtube')
+def Home():
+    return "🚀 API Flask déployée sur Railway avec succès !"
 
 @app.route('/api/download', methods=['POST'])
 def download():
