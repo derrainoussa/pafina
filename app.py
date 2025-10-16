@@ -14,7 +14,7 @@ CORS(app)
 
 # Configuration
 UPLOAD_FOLDER = os.path.join(os.path.expanduser('~'), 'downloads')
-MAX_WORKERS = 3
+MAX_WORKERS = 4
 
 def telecharger_audio(youtube_url, dossier_de_sortie, qualite='192'):
     try:
